@@ -4,7 +4,7 @@ from . import views
 
 urlpatterns = [
     # # ex: /polls/
-    path('speech/', views.speech, name='speech'),
+    # path('speech/', views.speech, name='speech'),
     path('file/', views.file, name='file'),
     path('text/', views.text, name='text'),
     # # ex: /polls/5/
