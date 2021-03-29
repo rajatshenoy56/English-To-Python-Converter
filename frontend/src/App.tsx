@@ -2,7 +2,7 @@ import FileInput from "./components/Input/FileInput";
 import TextInput from "./components/Input/TextInput";
 import AudioInput from "./components/Input/AudioInput";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import CustomNavbar from "./components/Navbar/Navbar"
+import CustomNavbar from "./shared/Navbar/Navbar"
 import FrontPage from "./components/FrontPage/FrontPage";
 import { Fragment } from 'react';
 
