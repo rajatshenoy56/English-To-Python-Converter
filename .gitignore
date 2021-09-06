@@ -133,3 +133,4 @@ GitHub.sublime-settings
 */npm-debug.log*
 
 */static/*/main.js
+.vscode

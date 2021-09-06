@@ -8,7 +8,7 @@ import numpy as np
 import tensorflow_text as text
 import tensorflow as tf
 
-model_name = "en_py_converter"
+model_name = "tokenizer"
 tokenizers = tf.saved_model.load(model_name)
 
 def get_angles(pos, i, d_model):
@@ -275,7 +275,7 @@ transformer = Transformer(
     pe_target=1000,
     rate=dropout_rate)
 
-latest = tf.train.latest_checkpoint("checkpoints")
+latest = tf.train.latest_checkpoint("transformer")
 print(latest)
 temp_input = tf.random.uniform((64, 38), dtype=tf.int64, minval=0, maxval=200)
 temp_target = tf.random.uniform((64, 36), dtype=tf.int64, minval=0, maxval=200)
